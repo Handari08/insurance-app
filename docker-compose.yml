@@ -1,0 +1,9 @@
+services:
+  insurance-app:
+    build: .
+    image: ${ACR_LOGIN_SERVER:-insurance-ml-app}/insurance-ml-app:${IMAGE_TAG:-local}
+    ports:
+      - "${APP_PORT:-8501}:8501"
+    environment:
+      API_URL: http://127.0.0.1:8000
+    restart: unless-stopped
