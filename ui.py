@@ -128,7 +128,7 @@ hr {
 
 # Header
 st.markdown(
-    "<div class='title'>🏥 Health Insurance Predictor</div>",
+    "<div class='title'>🏥 Prediksi Biaya Asuransi Kesehatan </div>",
     unsafe_allow_html=True
 )
 
